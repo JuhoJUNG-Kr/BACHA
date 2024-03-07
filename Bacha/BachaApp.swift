@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BachaApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @StateObject var container: DIContainer = .init(services: Services())
+  
+  var body: some Scene {
+    WindowGroup {
+      AuthenticatedView(authViewModel: .init())
+        .environmentObject(container)
     }
+  }
 }

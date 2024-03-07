@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		5B0B9F1D2B9A10A200A6D3DD /* BachaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B9F1C2B9A10A200A6D3DD /* BachaApp.swift */; };
-		5B0B9F1F2B9A10A200A6D3DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B9F1E2B9A10A200A6D3DD /* ContentView.swift */; };
+		5B0B9F1F2B9A10A200A6D3DD /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B9F1E2B9A10A200A6D3DD /* AuthenticatedView.swift */; };
 		5B0B9F212B9A10A300A6D3DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0B9F202B9A10A300A6D3DD /* Assets.xcassets */; };
 		5B0B9F242B9A10A300A6D3DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0B9F232B9A10A300A6D3DD /* Preview Assets.xcassets */; };
 		5B0B9F2D2B9A19C600A6D3DD /* RandomNonceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B9F2C2B9A19C600A6D3DD /* RandomNonceString.swift */; };
 		5B0B9F2F2B9A19E800A6D3DD /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B9F2E2B9A19E800A6D3DD /* SHA256.swift */; };
 		5B0B9F322B9A1A2800A6D3DD /* Date+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B9F312B9A1A2800A6D3DD /* Date+Extention.swift */; };
+		5B0B9F362B9A223C00A6D3DD /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B9F352B9A223C00A6D3DD /* DIContainer.swift */; };
+		5B0B9F392B9A227800A6D3DD /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B9F382B9A227800A6D3DD /* Services.swift */; };
+		5B0B9F3D2B9A234800A6D3DD /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B9F3C2B9A234800A6D3DD /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B0B9F192B9A10A200A6D3DD /* Bacha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bacha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0B9F1C2B9A10A200A6D3DD /* BachaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BachaApp.swift; sourceTree = "<group>"; };
-		5B0B9F1E2B9A10A200A6D3DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5B0B9F1E2B9A10A200A6D3DD /* AuthenticatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
 		5B0B9F202B9A10A300A6D3DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B0B9F232B9A10A300A6D3DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B0B9F2C2B9A19C600A6D3DD /* RandomNonceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNonceString.swift; sourceTree = "<group>"; };
 		5B0B9F2E2B9A19E800A6D3DD /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 		5B0B9F312B9A1A2800A6D3DD /* Date+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extention.swift"; sourceTree = "<group>"; };
-		5B0B9F332B9A1A8F00A6D3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5B0B9F332B9A1A8F00A6D3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B0B9F352B9A223C00A6D3DD /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		5B0B9F382B9A227800A6D3DD /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		5B0B9F3C2B9A234800A6D3DD /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,11 @@
 		5B0B9F1B2B9A10A200A6D3DD /* Bacha */ = {
 			isa = PBXGroup;
 			children = (
-				5B0B9F332B9A1A8F00A6D3DD /* Info.plist */,
 				5B0B9F1C2B9A10A200A6D3DD /* BachaApp.swift */,
-				5B0B9F1E2B9A10A200A6D3DD /* ContentView.swift */,
+				5B0B9F332B9A1A8F00A6D3DD /* Info.plist */,
+				5B0B9F342B9A222700A6D3DD /* General */,
+				5B0B9F3A2B9A231400A6D3DD /* View */,
+				5B0B9F372B9A226D00A6D3DD /* Service */,
 				5B0B9F2A2B9A192900A6D3DD /* Resource */,
 				5B0B9F2B2B9A19A900A6D3DD /* Util */,
 				5B0B9F302B9A1A1600A6D3DD /* Extension */,
@@ -100,6 +108,39 @@
 				5B0B9F312B9A1A2800A6D3DD /* Date+Extention.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		5B0B9F342B9A222700A6D3DD /* General */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B9F352B9A223C00A6D3DD /* DIContainer.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		5B0B9F372B9A226D00A6D3DD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B9F382B9A227800A6D3DD /* Services.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5B0B9F3A2B9A231400A6D3DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B9F3B2B9A231800A6D3DD /* Authentication */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B0B9F3B2B9A231800A6D3DD /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B9F1E2B9A10A200A6D3DD /* AuthenticatedView.swift */,
+				5B0B9F3C2B9A234800A6D3DD /* AuthenticationViewModel.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +214,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B0B9F2F2B9A19E800A6D3DD /* SHA256.swift in Sources */,
-				5B0B9F1F2B9A10A200A6D3DD /* ContentView.swift in Sources */,
+				5B0B9F1F2B9A10A200A6D3DD /* AuthenticatedView.swift in Sources */,
 				5B0B9F322B9A1A2800A6D3DD /* Date+Extention.swift in Sources */,
+				5B0B9F392B9A227800A6D3DD /* Services.swift in Sources */,
+				5B0B9F3D2B9A234800A6D3DD /* AuthenticationViewModel.swift in Sources */,
 				5B0B9F1D2B9A10A200A6D3DD /* BachaApp.swift in Sources */,
+				5B0B9F362B9A223C00A6D3DD /* DIContainer.swift in Sources */,
 				5B0B9F2D2B9A19C600A6D3DD /* RandomNonceString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
