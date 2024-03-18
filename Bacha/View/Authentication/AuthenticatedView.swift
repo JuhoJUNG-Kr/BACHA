@@ -8,22 +8,25 @@
 import SwiftUI
 
 struct AuthenticatedView: View {
-  // MARK: - Properties
-
+  
   @StateObject var authViewModel: AuthenticationViewModel
   
-  // MARK: - Configures
   var body: some View {
     VStack {
-      Image(systemName: "globe")
-        .imageScale(.large)
-        .foregroundStyle(.tint)
-      Text("Hello, world!")
+      switch authViewModel.authenticationState {
+      case .unauthenticated:
+        LoginIntroView()
+          .environmentObject(authViewModel)
+      case .authenticated:
+        MainTabView()
+      }
     }
-    .padding()
+    .onAppear {
+      authViewModel.send(action: .checkAuthenticationState)
+    }
   }
 }
 
 #Preview {
-  AuthenticatedView(authViewModel: .init())
+  AuthenticatedView(authViewModel: .init(container: .init(services: StubService())))
 }
